@@ -14,12 +14,9 @@ namespace Entities.Concrete
         public string? ImagePath { get; set; }
         public DateTime? Date { get; set; }
         public Car CarProp { get; set; }
-
         [NotMapped]
         public IFormFile ImageFile { get; set; }
-
         [NotMapped]
         public IFormFile[] ImageFiles { get; set; }
-
     }
 }
