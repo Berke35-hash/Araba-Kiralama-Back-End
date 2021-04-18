@@ -45,7 +45,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        //#region FormFile
+       
         [HttpPost("addformfile")]
         public IActionResult AddBatch([FromForm] CarImage carImage)
         {
@@ -70,7 +70,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        //#endregion
+        
         [HttpPost("update")]
         public IActionResult Update(CarImage carImage)
         {
@@ -115,10 +115,8 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        //token süresi ile image sil
-        //bellek , disk
+       
         [HttpGet("view")]
-        //[Route("api/Temp/{dataImagePath}")]
         public IActionResult View(int id)
         {         
             var imageSave = new NormalImageSave();
