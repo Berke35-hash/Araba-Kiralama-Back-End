@@ -68,7 +68,6 @@ namespace Business.Concrete
             }
             return new SuccessResult(Messages.CarImageAdded);
         }
-        //[CancellationTokenAspect]
         [SecuredOperation("admin")]
         public IResult AddFormFileBatch(CarImage carImage)
         {
