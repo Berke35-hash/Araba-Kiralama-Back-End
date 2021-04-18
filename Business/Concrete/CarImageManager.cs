@@ -41,7 +41,6 @@ namespace Business.Concrete
             {
                 carImage.ImagePath = item;
                 _carImageDal.Add(carImage);
-                //carImage.ImagePath = CheckIfCarImageOfImage(carImage.ImagePath);
                 var result = BusinessRules.Run(CheckIfCarImageLimitExceded(carImage.CarID), CheckIfCarImageOfImageExtension(item));
                 if (result != null)
                 {
