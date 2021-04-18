@@ -19,9 +19,6 @@ namespace Business.Attributes
         public RentalValidationAttribute(IRentalService rentalDal)
         {
             _rentalDal = rentalDal;
-
-            //MethodInfo methodInfo = typeof(IRentalService).GetMethod("Add", new[] { typeof(string) });
-            //methodInfo.Invoke(new,new[],{ });
         }
     }
 }
