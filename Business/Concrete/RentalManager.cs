@@ -68,7 +68,6 @@ namespace Business.Concrete
                 {
                     isForRent = true;
                     return new SuccessDataResult<bool>(isForRent, Messages.IsForRent);
-                    //return new ErrorDataResult<bool>(_rentalDal.Get(p => p.CarID == carID), Messages.IsForRentInvalid);
                 }
                 isForRent = false;
                 return new SuccessDataResult<bool>(isForRent, Messages.IsForRent);
@@ -87,7 +86,6 @@ namespace Business.Concrete
                 {
                     isForRent = true;
                     return new SuccessDataResult<bool>(isForRent, Messages.IsForRent);
-                    //return new ErrorDataResult<bool>(_rentalDal.Get(p => p.CarID == carID), Messages.IsForRentInvalid);
                 }
                 isForRent = false;
                 return new SuccessDataResult<bool>(isForRent, Messages.IsForRent);
